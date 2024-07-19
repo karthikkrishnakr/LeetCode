@@ -4,6 +4,6 @@ class Solution:
             result = int(str(x)[::-1])
         else:
             result = int(str(abs(x))[::-1])*-1
-        if -(2**31) < result <=  2**31:
-            return result
-        return 0
+        if result < -(2**31) or result >= 2**31:
+            return 0
+        return result
