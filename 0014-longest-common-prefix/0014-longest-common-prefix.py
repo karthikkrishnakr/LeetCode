@@ -5,6 +5,7 @@ class Solution:
         for i in strs:
             if len(i) < len(shortest):
                 shortest = i
+                
         for i in range(len(shortest)):
             for j in strs:
                 if shortest[i] != j[i]:
