@@ -6,7 +6,6 @@ class Solution:
         else:
             shortest = str2
             largest = str1
-        prefix = ""
         for i in range(len(shortest)):
             k = len(largest)//(len(shortest)-i)
             l = len(shortest)//(len(shortest)-i)
